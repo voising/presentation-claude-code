@@ -1,0 +1,14 @@
+{
+  "name": "presentation-claude-code",
+  "version": "1.0.0",
+  "description": "Talk: Une idée. Un après-midi. Un produit. — Claude Code, 60 min, FR",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "open": "open http://localhost:8080"
+  },
+  "author": "Guillaume Voisin",
+  "license": "MIT",
+  "dependencies": {
+    "reveal.js": "^6.0.1"
+  }
+}

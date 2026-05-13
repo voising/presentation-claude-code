@@ -1,0 +1,18 @@
+Reveal.initialize({
+  hash: true,
+  controls: true,
+  controlsTutorial: false,
+  progress: true,
+  slideNumber: 'c/t',
+  history: true,
+  center: false,
+  transition: 'fade',
+  transitionSpeed: 'default',
+  backgroundTransition: 'none',
+  width: 1600,
+  height: 900,
+  margin: 0.06,
+  minScale: 0.2,
+  maxScale: 2.0,
+  pdfSeparateFragments: false,
+});
