@@ -30,6 +30,30 @@
         </div>
       </section>
 
+      <!-- ══ 1bis · Programme ═════════════════════════════════════ -->
+      <section class="s-agenda" data-transition="fade">
+        <span class="eyebrow">Au programme</span>
+        <h2>Une heure, trois temps.</h2>
+        <div class="agenda-list">
+          <div class="agenda-item">
+            <span class="agenda-num">01</span>
+            <span class="agenda-name">Claude Code, c'est quoi ?</span>
+            <span class="agenda-time">~&nbsp;10&nbsp;min</span>
+          </div>
+          <div class="agenda-item">
+            <span class="agenda-num">02</span>
+            <span class="agenda-name">On construit un site web (ou deux)</span>
+            <span class="agenda-time">~&nbsp;15&nbsp;min</span>
+          </div>
+          <div class="agenda-item">
+            <span class="agenda-num">03</span>
+            <span class="agenda-name">On construit une app iOS, ensemble</span>
+            <span class="agenda-time">~&nbsp;35&nbsp;min</span>
+          </div>
+        </div>
+        <p class="agenda-foot">Puis <em class="accent">30&nbsp;minutes</em> de questions, à votre rythme.</p>
+      </section>
+
       <!-- ══ 2 · C'est quoi Claude Code ════════════════════════════ -->
       <section class="s-pivot" data-transition="fade">
         <span class="eyebrow">C'est quoi Claude Code ?</span>
@@ -39,7 +63,7 @@
           lance des scripts,<br>
           installe des apps.
         </p>
-        <p class="pivot-sub">Un ingénieur a pris le contrôle de votre ordinateur.</p>
+        <p class="pivot-sub">Un développeur prend le contrôle de votre ordinateur.</p>
       </section>
 
       <!-- ══ 3 · Installation ══════════════════════════════════════ -->
@@ -129,9 +153,134 @@
           <ul>
             <li>Construire un site somptueux</li>
             <li>Le déployer en ligne</li>
-            <li>Le vendre <strong>500&nbsp;€</strong></li>
           </ul>
           <p class="opp-foot">En moins de <em class="accent">30 minutes</em>.</p>
+        </div>
+      </section>
+
+      <!-- ══ 5bis · Architecture web ══════════════════════════════ -->
+      <section class="s-arch" data-transition="fade">
+        <span class="eyebrow">L'architecture</span>
+        <h2>Simple. Mondial. Gratuit.</h2>
+
+        <svg class="arch-svg" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- ── TOP: HOSTING ─────────────────────────────────── -->
+          <text x="500" y="18" text-anchor="middle" class="arch-label">HÉBERGEMENT · CDN MONDIAL · GRATUIT</text>
+
+          <g transform="translate(310 34)">
+            <rect width="175" height="60" rx="8" fill="#1A1815" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <polygon points="28,44 54,44 41,20" fill="#F2EDE3"/>
+            <text x="68" y="40" class="arch-host-name">Vercel</text>
+          </g>
+
+          <g transform="translate(515 34)">
+            <rect width="175" height="60" rx="8" fill="#1A1815" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <path d="M 24 46 a 8 8 0 0 1 1 -16 a 11 11 0 0 1 20 -2 a 8 8 0 0 1 5 18 z" fill="#F38020"/>
+            <text x="64" y="40" class="arch-host-name">Cloudflare</text>
+          </g>
+
+          <line x1="500" y1="102" x2="500" y2="138" stroke="#E8945E" stroke-width="2"/>
+          <polygon points="495,134 500,144 505,134" fill="#E8945E"/>
+
+          <!-- ── MIDDLE: BROWSER + crossed-out DB ─────────────── -->
+          <g transform="translate(290 152)">
+            <rect width="320" height="180" rx="10" fill="#1A1815" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+            <path d="M 0 10 a 10 10 0 0 1 10 -10 h 300 a 10 10 0 0 1 10 10 v 24 h -320 z" fill="#25221E"/>
+            <circle cx="16" cy="18" r="4.5" fill="#FF5F57"/>
+            <circle cx="32" cy="18" r="4.5" fill="#FFBD2E"/>
+            <circle cx="48" cy="18" r="4.5" fill="#28C840"/>
+            <rect x="110" y="10" width="200" height="14" rx="7" fill="rgba(255,255,255,0.06)"/>
+            <rect x="24" y="58" width="160" height="18" rx="2" fill="#E8945E"/>
+            <rect x="24" y="90" width="270" height="6" rx="2" fill="rgba(242,237,227,0.25)"/>
+            <rect x="24" y="104" width="250" height="6" rx="2" fill="rgba(242,237,227,0.25)"/>
+            <rect x="24" y="118" width="210" height="6" rx="2" fill="rgba(242,237,227,0.25)"/>
+            <rect x="24" y="142" width="100" height="28" rx="6" fill="rgba(232,148,94,0.18)" stroke="#E8945E" stroke-width="1.5"/>
+            <text x="74" y="161" text-anchor="middle" class="arch-btn-text">→</text>
+          </g>
+
+          <!-- Crossed-out database -->
+          <g transform="translate(700 178)">
+            <g class="arch-db" opacity="0.55">
+              <ellipse cx="60" cy="14" rx="55" ry="13" fill="#1A1815" stroke="rgba(242,237,227,0.55)" stroke-width="2"/>
+              <path d="M 5 14 V 50 a 55 13 0 0 0 110 0 V 14" fill="#1A1815" stroke="rgba(242,237,227,0.55)" stroke-width="2"/>
+              <ellipse cx="60" cy="32" rx="55" ry="13" fill="none" stroke="rgba(242,237,227,0.3)" stroke-width="1.5"/>
+              <ellipse cx="60" cy="50" rx="55" ry="13" fill="none" stroke="rgba(242,237,227,0.3)" stroke-width="1.5"/>
+            </g>
+            <!-- Big red cross -->
+            <line x1="-4" y1="-4" x2="124" y2="76" stroke="#E55555" stroke-width="6" stroke-linecap="round"/>
+            <line x1="124" y1="-4" x2="-4" y2="76" stroke="#E55555" stroke-width="6" stroke-linecap="round"/>
+            <text x="60" y="100" text-anchor="middle" class="arch-db-label">Pas de base de données</text>
+            <text x="60" y="118" text-anchor="middle" class="arch-db-sub">pas de backend, pas de maintenance</text>
+          </g>
+
+          <text x="450" y="352" text-anchor="middle" class="arch-site-caption">Votre site &middot; statique &middot; rapide</text>
+
+          <!-- Manifold from site to services -->
+          <line x1="450" y1="362" x2="450" y2="388" stroke="#E8945E" stroke-width="2"/>
+          <line x1="180" y1="388" x2="720" y2="388" stroke="#E8945E" stroke-width="2"/>
+          <line x1="180" y1="388" x2="180" y2="410" stroke="#E8945E" stroke-width="2"/>
+          <line x1="450" y1="388" x2="450" y2="410" stroke="#E8945E" stroke-width="2"/>
+          <line x1="720" y1="388" x2="720" y2="410" stroke="#E8945E" stroke-width="2"/>
+          <polygon points="175,406 180,416 185,406" fill="#E8945E"/>
+          <polygon points="445,406 450,416 455,406" fill="#E8945E"/>
+          <polygon points="715,406 720,416 725,406" fill="#E8945E"/>
+
+          <!-- ── BOTTOM: SERVICES ─────────────────────────────── -->
+          <g transform="translate(90 418)">
+            <rect width="180" height="74" rx="8" fill="#1A1815" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <g transform="translate(18 18)" stroke="#E8945E" stroke-width="2" fill="none" stroke-linecap="round">
+              <rect x="0" y="0" width="34" height="40" rx="4"/>
+              <line x1="7" y1="12" x2="27" y2="12"/>
+              <line x1="7" y1="22" x2="27" y2="22"/>
+              <line x1="7" y1="32" x2="19" y2="32"/>
+            </g>
+            <text x="68" y="32" class="arch-service-name">Formulaire</text>
+            <text x="68" y="52" class="arch-service-sub">Tally · Formspree</text>
+          </g>
+
+          <g transform="translate(360 418)">
+            <rect width="180" height="74" rx="8" fill="#1A1815" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <g transform="translate(18 18)" stroke="#E8945E" stroke-width="2" fill="none" stroke-linecap="round">
+              <rect x="0" y="6" width="38" height="34" rx="4"/>
+              <line x1="0" y1="16" x2="38" y2="16"/>
+              <line x1="10" y1="0" x2="10" y2="10"/>
+              <line x1="28" y1="0" x2="28" y2="10"/>
+              <circle cx="11" cy="26" r="1.6" fill="#E8945E" stroke="none"/>
+              <circle cx="19" cy="26" r="1.6" fill="#E8945E" stroke="none"/>
+              <circle cx="27" cy="26" r="1.6" fill="#E8945E" stroke="none"/>
+              <circle cx="11" cy="34" r="1.6" fill="#E8945E" stroke="none"/>
+              <circle cx="19" cy="34" r="1.6" fill="#E8945E" stroke="none"/>
+            </g>
+            <text x="68" y="32" class="arch-service-name">Réservation</text>
+            <text x="68" y="52" class="arch-service-sub">Cal.com · Calendly</text>
+          </g>
+
+          <g transform="translate(630 418)">
+            <rect width="180" height="74" rx="8" fill="#1A1815" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <g transform="translate(18 22)" stroke="#E8945E" stroke-width="2" fill="none" stroke-linecap="round">
+              <rect x="0" y="0" width="42" height="32" rx="4"/>
+              <line x1="0" y1="10" x2="42" y2="10"/>
+              <line x1="6" y1="22" x2="16" y2="22"/>
+              <line x1="22" y1="22" x2="28" y2="22"/>
+            </g>
+            <text x="68" y="32" class="arch-service-name">Paiement</text>
+            <text x="68" y="52" class="arch-service-sub">Stripe · Lemon Squeezy</text>
+          </g>
+        </svg>
+      </section>
+
+      <!-- ══ 5ter · Cloudflare network map ════════════════════════ -->
+      <section class="s-map" data-transition="fade">
+        <span class="eyebrow">Le réseau Cloudflare</span>
+        <h2>Votre site, partout à la fois.</h2>
+
+        <div id="globe-3d" class="globe-3d"></div>
+
+
+        <div class="map-stats">
+          <div class="map-stat"><span class="map-stat-num">330+</span><span class="map-stat-label">villes</span></div>
+          <div class="map-stat"><span class="map-stat-num">120+</span><span class="map-stat-label">pays</span></div>
+          <div class="map-stat"><span class="map-stat-num">&lt; 50&nbsp;ms</span><span class="map-stat-label">latence pour 95% du web</span></div>
         </div>
       </section>
 
@@ -287,10 +436,28 @@
         <p class="step-foot">Il pose les fondations visuelles avant d'écrire la moindre feature.</p>
       </section>
 
-      <!-- ══ 11 · iOS — Étape 3 : tout construire ════════════════ -->
+      <!-- ══ 11 · iOS — Étape 3 : l'icône ═════════════════════════ -->
       <section class="s-step" data-transition="fade">
         <div class="step-header">
           <span class="step-num">03</span>
+          <div>
+            <span class="eyebrow">Mon process iOS</span>
+            <h2>L'icône</h2>
+          </div>
+        </div>
+        <p class="step-intro">
+          Dans <strong>Claude Code</strong>, un prompt méta&nbsp;:
+        </p>
+        <div class="prompt-block">
+          <span class="prompt-quote">"</span>Donne-moi un prompt que je vais coller dans <strong>Gemini</strong> pour créer une icône d'application iOS.<span class="prompt-quote">"</span>
+        </div>
+        <p class="step-foot">Claude Code connaît l'app — il écrit le prompt parfait pour Gemini. On copie, on colle, on a l'icône.</p>
+      </section>
+
+      <!-- ══ 12 · iOS — Étape 4 : tout construire ════════════════ -->
+      <section class="s-step" data-transition="fade">
+        <div class="step-header">
+          <span class="step-num">04</span>
           <div>
             <span class="eyebrow">Mon process iOS</span>
             <h2>Tout construire</h2>
@@ -355,5 +522,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/reveal.js"></script>
   <script src="js/init.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="js/globe.js"></script>
 </body>
 </html>

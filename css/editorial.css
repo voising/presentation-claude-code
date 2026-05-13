@@ -1524,6 +1524,63 @@ html { color-scheme: dark; }
   letter-spacing: 0.02em;
 }
 
+/* ── Agenda slide ────────────────────────────────────── */
+.s-agenda {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.s-agenda h2 {
+  font-size: 4.6rem;
+  margin-bottom: 3.5rem;
+  letter-spacing: -0.02em;
+}
+.agenda-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+}
+.agenda-item {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  align-items: baseline;
+  gap: 2.5rem;
+  padding: 1.6rem 0;
+  border-top: 1px solid rgba(255,255,255,0.10);
+}
+.agenda-item:last-child {
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+.agenda-num {
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  color: var(--accent);
+}
+.agenda-name {
+  font-family: var(--serif);
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.agenda-time {
+  font-family: var(--sans);
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--ink-3);
+  letter-spacing: 0.04em;
+}
+.agenda-foot {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.6rem;
+  color: var(--ink-2);
+  margin-top: 2.5rem;
+}
+
 /* ── Process slide ───────────────────────────────────── */
 .s-process {
   display: flex !important;
@@ -1577,6 +1634,153 @@ html { color-scheme: dark; }
   font-family: var(--serif);
   font-style: italic;
   color: var(--accent);
+}
+
+/* ── Architecture slide ──────────────────────────────── */
+.s-arch {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+.s-arch h2 {
+  font-size: 3.6rem;
+  margin-bottom: 1.6rem;
+  letter-spacing: -0.02em;
+}
+.arch-svg {
+  width: min(1200px, 96%);
+  height: auto;
+  max-height: 620px;
+  display: block;
+  overflow: visible;
+}
+.arch-svg .arch-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  fill: var(--ink-3);
+}
+.arch-svg .arch-host-name {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 500;
+  fill: var(--ink);
+}
+.arch-svg .arch-site-caption {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 500;
+  fill: var(--accent);
+}
+.arch-svg .arch-service-name {
+  font-family: 'Fraunces', serif;
+  font-size: 17px;
+  font-weight: 500;
+  fill: var(--ink);
+}
+.arch-svg .arch-service-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  fill: var(--ink-3);
+  letter-spacing: 0.02em;
+}
+.arch-svg .arch-btn-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  fill: var(--accent);
+}
+.arch-svg .arch-db-label {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 500;
+  fill: var(--ink-2);
+}
+.arch-svg .arch-db-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  fill: var(--ink-3);
+  letter-spacing: 0.04em;
+}
+
+/* ── Cloudflare map slide ────────────────────────────── */
+.s-map {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+.s-map h2 {
+  font-size: 3.8rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.02em;
+}
+.map-svg {
+  width: min(1200px, 96%);
+  height: auto;
+  max-height: 540px;
+  display: block;
+  overflow: visible;
+}
+.globe-3d {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+.globe-3d canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+.map-svg .pop-dots g {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pop-pulse 3s ease-in-out infinite;
+}
+.map-svg .pop-dots g:nth-child(3n)  { animation-delay: 0.4s; }
+.map-svg .pop-dots g:nth-child(3n+1){ animation-delay: 1.1s; }
+.map-svg .pop-dots g:nth-child(3n+2){ animation-delay: 1.9s; }
+@keyframes pop-pulse {
+  0%, 100% { opacity: 0.85; }
+  50%      { opacity: 1; }
+}
+.map-stats {
+  display: flex;
+  gap: 4rem;
+  margin-top: 1rem;
+  align-items: baseline;
+}
+.map-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+.map-stat-num {
+  font-family: var(--serif);
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--accent);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.map-stat-label {
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-3);
 }
 
 /* ── Fragments / animations ──────────────────────────── */
