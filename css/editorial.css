@@ -1524,6 +1524,61 @@ html { color-scheme: dark; }
   letter-spacing: 0.02em;
 }
 
+/* ── Process slide ───────────────────────────────────── */
+.s-process {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.s-process h2 {
+  font-size: 4.6rem;
+  margin-bottom: 4rem;
+  letter-spacing: -0.02em;
+}
+.process-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 1100px;
+}
+.process-item {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  align-items: baseline;
+  gap: 2.5rem;
+  padding: 1.6rem 0;
+  border-top: 1px solid rgba(255,255,255,0.10);
+}
+.process-item:last-child {
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+.process-num {
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  color: var(--accent);
+}
+.process-name {
+  font-family: var(--serif);
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.process-tool {
+  font-family: var(--sans);
+  font-size: 1.3rem;
+  color: var(--ink-2);
+  letter-spacing: 0.02em;
+}
+.process-tool em {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--accent);
+}
+
 /* ── Fragments / animations ──────────────────────────── */
 .reveal .fragment.fade-in-then {
   opacity: 0;
